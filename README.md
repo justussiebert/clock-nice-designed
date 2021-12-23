@@ -1,5 +1,5 @@
-# Clock working
+# Clock working, nice design
 
-## from Justus for Nico
+## from Patricia (design) and Justus (final JS) for Nico (basis JS)
 
 ## Christmas present
