@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+h1 {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+.clock-digital {
+  margin-bottom: 7rem;
+  text-align: center;
+  font-family: monospace, sans-serif;
+  font-size: 3.25rem;
+  color: #3e7666;
+}
+.clock-digital-inner {
+  display: inline-block;
+  padding: 5px;
+  _border: 1px solid #ccc;
+}
+
+.clock-analog {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+.clockContainer {
+  position: relative;
+  margin: auto;
+  height: 70vw;
+  width: 70vw;
+  background-size: 100%;
+}
+
+.pointerSeconds,
+.pointerMinuts,
+.pointerHours {
+  position: absolute;
+  top: 53%;
+  left: 48.25%;
+  transform-origin: 50% 100%;
+}
+
+.pointerSeconds {
+  height: 20%;
+  width: 3px;
+  background-color: #f6bd14;
+  transform: translateY(-100%) translateX(-3px) rotate(var(--seconds, 0deg));
+}
+.pointerSeconds::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+
+  height: 20px;
+  width: 3px;
+  background-color: #f6bd14;
+}
+
+.pointerMinuts {
+  height: 30%;
+  width: 7px;
+  background-color: #3e7666;
+  transform: translateY(-100%) translateX(-5px) rotate(var(--minuts, 0deg));
+}
+.pointerMinuts::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+
+  height: 20px;
+  width: 7px;
+  background-color: #3e7666;
+}
+.pointerMinuts::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -13px;
+  width: 0;
+  height: 0;
+}
+
+.pointerHours {
+  height: 23%;
+  width: 10px;
+  background-color: #011c26;
+  transform: translateY(-100%) translateX(-7px) rotate(var(--hours, 0deg));
+}
+.pointerHours::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -11px;
+  width: 0;
+  height: 0;
+}
+
+.pointerHours::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+
+  height: 20px;
+  width: 10px;
+  background-color: #011c26;
+}
+
+.footerGruss {
+  margin-top: 4rem;
+}
+.christmas {
+  font-family: "Give You Glory", cursive;
+  font-size: 42px;
+}
